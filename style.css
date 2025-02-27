@@ -7,16 +7,18 @@
     /* Image Styling */
 
 }
-
+/* add two more kinds of functionality to your website. (fixed background scrool) */
 .fixed-bg {
     background-image: url('images/Guilf.jpg');
-    min-height: 670px;
+    min-height: 670px;   /* Change the width/height of one or more elements*/
+    width: 100%; /* Change the width/height of one or more elements*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.student-fixed-bg{
+
+.student-fixed-bg {
     background-image: url('images/guilford-college_movein2023_20230820_142447.png');
     min-height: 670px;
     background-attachment: fixed;
@@ -24,7 +26,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.academic-bg{
+
+.academic-bg {
     background-image: url('images/guilford_college_-_hege_library_-_2018.png');
     min-height: 670px;
     background-attachment: fixed;
@@ -40,17 +43,20 @@ nav {
     width: 100%;
     background: #660d0d;
     z-index: 1000;
+    display: flex; /* Flexbox for navigation */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Vertically center the items */
+    padding: 10px 0;
 }
 
 nav ul {
     list-style: none;
-    padding: 10px;
+    padding: 10px; 
     margin: 0;
-    text-align: center;
+    display: flex;
 }
 
-nav ul li {
-    display: inline;
+nav ul li { 
     margin-right: 10px;
 }
 
@@ -59,94 +65,110 @@ nav ul li a {
     text-decoration: none;
     padding: 5px 10px;
     font-size: large;
-    margin: 0, 0, 0, 0;
-    padding: 0, 0, 0, 0;
-    box-sizing: border-box;
+    display: block;
+    text-align: center;
 }
 
-    a:hover {
-        color: #660d0d;
-        background-color: #f4f4f4;
-        border-radius: 5px;
-        padding: 5px;
-        text-decoration: none;
-    }
+a:hover {
+    color: #660d0d;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
 
-    /*one rule that changes the presentation of two or more elements using a group selector*/
-    h1,
-    h2,
-    h3 {
-        padding-top: 5px;
+/*one rule that changes the presentation of two or more elements using a group selector*/
+h1,
+h2,
+h3 {
+    padding-top: 5px;
 
-    }
+}
 
-    h1 {
-        text-align: center;
+h1 {
+    text-align: center;
 
-    }
+}
 
-    /* Body Styling */
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        background-color: #f4f4f4;
-        color: darkred;
-        padding: 5px;
-    }
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: darkred;
+    padding: 5px;
+    margin: -10px; /* Add margin to one or more elements to provide reasonable separation*/
+}
 
-    h2 {
-        color: rgb(105, 5, 5);
-        font-family: sans-serif;
-        font-size: 1.5em;
-        font-weight: bolder;
-        font-style: italic;
-        margin-bottom: 20px;
-        background-color: #f4f4f4;
-        width: 80%;
-        margin: 0 auto;
-        padding: 10px;
-    }
+h2 {
+    color: rgb(105, 5, 5);
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-style: italic;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;   /* Add padding to one or more elements to provide reasonable separation*/
+}
 
-    /* Header Styling */
-    header {
-        background: #333;
-        color: #fff;
-        padding: 10px 0;
-        text-align: center;
-    }
+/* Header Styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
 
-    a:link {
-        color: #660d0d;
-        text-decoration: none;
-    }
-
-
-
-    /* Main Content Styling */
-    main {
-        margin-top: 20px;
-    }
-
-    /* Footer Styling */
-    footer {
-        background: #ffffff;
-        color: #fff;
-        text-align: center;
-        padding: 5px 0;
-        margin-top: 20px;
-        font-size:smaller;
-
-    }
-
-    p {
-        font-size: 15px;
-        color: #333;
-        white-space: normal;
-        overflow: visible;
-        text-overflow: clip;
-        width: 50%;
-        margin: 0 auto;
+a:link {
+    color: #660d0d;
+    text-decoration: none;
+}
 
 
 
-    }
+/* Main Content Styling */
+main {
+    margin-top: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background: #ffffff;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;  /* Add padding to one or more elements to provide reasonable separation*/
+    margin-top: 20px;
+    font-size: smaller;
+
+}
+
+p {
+    font-size: 15px;
+    color: #333;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    width: 50%;
+    margin: 0 auto;
+}
+/* Add a rule that uses a descendant selector.  */
+p strong{
+    color:#660d0d;
+    font-size: 10px;
+}
+/* Add identifiers to two different objects in your website  */
+p.pStudent-life{
+    margin-bottom: 50px;
+}
+.gradStudents{      /*  id selector and the float property to flow the content  */
+    /* margin-bottom: 50px; */
+    width: 20%;
+    float: left;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 50px;
+
+
+}
