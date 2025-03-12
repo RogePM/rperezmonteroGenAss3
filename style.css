@@ -7,11 +7,14 @@
     /* Image Styling */
 
 }
+
 /* add two more kinds of functionality to your website. (fixed background scrool) */
 .fixed-bg {
     background-image: url('images/Guilf.jpg');
-    min-height: 670px;   /* Change the width/height of one or more elements*/
-    width: 100%; /* Change the width/height of one or more elements*/
+    min-height: 670px;
+    /* Change the width/height of one or more elements*/
+    width: 100%;
+    /*Change the width/height of one or more elements */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,6 +39,17 @@
     background-size: cover;
 }
 
+
+button {
+    background-color: #660d0d8e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
 /* Navigation Styling */
 nav {
     position: fixed;
@@ -43,20 +57,23 @@ nav {
     width: 100%;
     background: #660d0d;
     z-index: 1000;
-    display: flex; /* Flexbox for navigation */
-    justify-content: center; /* Center the items horizontally */
-    align-items: center; /* Vertically center the items */
+    display: flex;
+    /* Flexbox for navigation */
+    justify-content: center;
+    /* Center the items horizontally */
+    align-items: center;
+    /* Vertically center the items */
     padding: 10px 0;
 }
 
 nav ul {
     list-style: none;
-    padding: 10px; 
+    padding: 10px;
     margin: 0;
     display: flex;
 }
 
-nav ul li { 
+nav ul li {
     margin-right: 10px;
 }
 
@@ -97,7 +114,8 @@ body {
     background-color: #f4f4f4;
     color: darkred;
     padding: 5px;
-    margin: -10px; /* Add margin to one or more elements to provide reasonable separation*/
+    margin: -10px;
+    /* Add margin to one or more elements to provide reasonable separation*/
 }
 
 h2 {
@@ -110,7 +128,8 @@ h2 {
     background-color: #f4f4f4;
     width: fit-content;
     margin: 0 auto;
-    padding: 10px;   /* Add padding to one or more elements to provide reasonable separation*/
+    padding: 10px;
+    /* Add padding to one or more elements to provide reasonable separation*/
 }
 
 /* Header Styling */
@@ -138,7 +157,8 @@ footer {
     background: #ffffff;
     color: #fff;
     text-align: center;
-    padding: 5px 0;  /* Add padding to one or more elements to provide reasonable separation*/
+    padding: 5px 0;
+    /* Add padding to one or more elements to provide reasonable separation*/
     margin-top: 20px;
     font-size: smaller;
 
@@ -153,16 +173,20 @@ p {
     width: 50%;
     margin: 0 auto;
 }
+
 /* Add a rule that uses a descendant selector.  */
-p strong{
-    color:#660d0d;
+p strong {
+    color: #660d0d;
     font-size: 10px;
 }
+
 /* Add identifiers to two different objects in your website  */
-p.pStudent-life{
+p.pStudent-life {
     margin-bottom: 50px;
 }
-.gradStudents{      /*  id selector and the float property to flow the content  */
+
+.gradStudents {
+    /*  id selector and the float property to flow the content  */
     /* margin-bottom: 50px; */
     width: 20%;
     float: left;
