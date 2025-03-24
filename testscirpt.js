@@ -8,13 +8,29 @@ myitem.addEventListener("mouseout", onMouseOut);
 
 Otheritem.addEventListener("click", darkMode);
 
-textentry = document.getElementById("myinput");  
+textentry = document.getElementById("myinput");
 textentry.addEventListener("change", onChange);
 
 
 
-function onClick() {  
-    myitem.style.color = "green";  
+//function to make image clickable and smaller or larger when clicked
+   // Open modal and show the enlarged image
+   function openModal() {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    var thumbnail = document.getElementById("gradStudents");
+
+    modal.style.display = "block";
+    modalImg.src = thumbnail.src;
+}
+
+// Close modal
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+
+function onClick() {
+    myitem.style.color = "green";
     myitem.style.fontSize = "20px";
     myitem.style.fontWeight = "bold";
     myitem.style.textDecoration = "underline";
@@ -25,7 +41,7 @@ function onMouseOver() {
 }
 
 function onMouseOut() {
-    myitem.style.backgroundColor = "white"; 
+    myitem.style.backgroundColor = "white";
 }
 
 function darkMode() {
@@ -34,7 +50,9 @@ function darkMode() {
 }
 
 // Function to change the footer text Name to new authoer name
-function onChange() {  
-    newtext = myinput.value;  
-    footerName.innerHTML = newtext;  
+function onChange() {
+    newtext = myinput.value;
+    footerName.innerHTML = newtext;
 }
+// When the image is clicked on, it should expand to a larger size that does not extend outside the bounds of the window. When the user clicks on the image again, it should shrink back to the thumbnail size.
+

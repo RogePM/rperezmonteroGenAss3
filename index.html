@@ -7,55 +7,77 @@
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+
 </head>
 
 <body>
-    <nav>
+    <header>
+        <nav>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="student-life.html">Student Life</a></li>
-            <button id="thebutton">Dark Mode</button>
-        </ul>
-    </nav>
-    <div class="fixed-bg"></div>
-    <h1><br>Guilford College</h1>
-    <img src="images/students.jpg" alt="gradStudents" class="gradStudents">
-    <h2> Local</h2>
-    <p class="intro">Guilford College is a small liberal arts college with a strong sense
-        of community and a commitment to sustainability and social justice.
-        <br>Founded in 1837 by members of the Religious Society of Friends (Quakers),
-        Guilford College has a rich history and tradition of fostering critical thinking, ethical leadership, and
-        inclusive excellence.
-        <br>With a student-to-faculty ratio of 12:1, Guilford offers personalized attention and
-        a supportive learning environment where students can thrive academically and personally.
-        Guilford's beautiful 340-acre campus features a mix of historic and modern buildings,
-        wooded areas, and open green spaces, providing an inspiring setting for learning and growth.
-    </p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="student-life.html">Student Life</a></li>
+                <button id="thebutton">Dark Mode</button>
+            </ul>
+        </nav>
+        <div class="fixed-bg"></div>
+    </header>
 
-    <h2 id="firsttest">Academics</h2>
-    <p class="pAcademics">Guilford College offers a wide range of academic programs,
-        including more than 40 majors and minors in the arts, humanities, sciences, and social sciences.
-        <br>Students can also design their own major or minor through Guilford's innovative interdisciplinary studies
-        program.
-        <br>Guilford's faculty are dedicated teachers and scholars who are committed to student success and engagement.
-    </p>
-    <!-- Add identifiers to two different objects in your website -->
-    <h2 id="student-life">Student Life</h2>
-    <p class="pStudent-life">Guilford College offers a vibrant and diverse student life experience, with a wide range of
-        clubs, organizations,
-        and activities for students to get involved in.
-        <br>From student government to intramural sports, there are plenty of opportunities for students to connect with
-        their peers and make a difference on campus.
-        <br>Guilford's campus is also home to a number of cultural and social events, including concerts, lectures, and
-        art
-        exhibits, providing students with a rich and dynamic college experience.
-    </p>
+    <section class="intro">
+        <h1><br>Guilford College</h1>
+        <img src="images/students.jpg" id="gradStudents" style="width:100%;max-width:300px;cursor:pointer"
+            onclick="openModal()">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        
+        <h2> Local</h2>
+        <p class="intro">Guilford College is a small liberal arts college with a strong sense
+            of community and a commitment to sustainability and social justice.
+            <br>Founded in 1837 by members of the Religious Society of Friends (Quakers),
+            Guilford College has a rich history and tradition of fostering critical thinking, ethical leadership, and
+            inclusive excellence.
+            <br>With a student-to-faculty ratio of 12:1, Guilford offers personalized attention and
+            a supportive learning environment where students can thrive academically and personally.
+            Guilford's beautiful 340-acre campus features a mix of historic and modern buildings,
+            wooded areas, and open green spaces, providing an inspiring setting for learning and growth.
+        </p>
+
+        <h2 id="firsttest">Academics</h2>
+        <p class="pAcademics">Guilford College offers a wide range of academic programs,
+            including more than 40 majors and minors in the arts, humanities, sciences, and social sciences.
+            <br>Students can also design their own major or minor through Guilford's innovative interdisciplinary
+            studies
+            program.
+            <br>Guilford's faculty are dedicated teachers and scholars who are committed to student success and
+            engagement.
+        </p>
+        <!-- Add identifiers to two different objects in your website -->
+        <h2 id="student-life">Student Life</h2>
+        <p class="pStudent-life">Guilford College offers a vibrant and diverse student life experience, with a wide
+            range of
+            clubs, organizations,
+            and activities for students to get involved in.
+            <br>From student government to intramural sports, there are plenty of opportunities for students to connect
+            with
+            their peers and make a difference on campus.
+            <br>Guilford's campus is also home to a number of cultural and social events, including concerts, lectures,
+            and
+            art
+            exhibits, providing students with a rich and dynamic college experience.
+        </p>
+    </section>
 </body>
 <footer>
     <p id="footer"><strong> Rogelio Perez 2/20/2025</strong></p>
-    <input type = 'text' id = 'myinput' placeholder = 'Enter your name'>
+    <input type='text' id='myinput' placeholder='Enter your name'>
 </footer>
 
 
