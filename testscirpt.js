@@ -1,6 +1,7 @@
 myitem = document.getElementById("firsttest");
 Otheritem = document.getElementById("thebutton");
 footerName = document.getElementById("footer");
+firstbutton = document.getElementById("firstbutton");
 
 myitem.addEventListener("click", onClick);
 myitem.addEventListener("mouseover", onMouseOver);
@@ -10,6 +11,11 @@ Otheritem.addEventListener("click", darkMode);
 
 textentry = document.getElementById("myinput");
 textentry.addEventListener("change", onChange);
+
+firstbutton.addEventListener("click", function() {
+    document.querySelector('.fixed-bg').scrollIntoView({ behavior: 'smooth' });
+}
+);
 
 
 
